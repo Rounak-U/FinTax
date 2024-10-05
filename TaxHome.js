@@ -45,3 +45,8 @@ observer1.observe(sectionTitle1);
 cards1.forEach(card1 => {
     observer.observe(card1);
 });
+
+function toggleMenu() {
+    const navContents = document.querySelector('.nav-contents');
+    navContents.classList.toggle('active');
+}
