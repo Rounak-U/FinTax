@@ -101,7 +101,7 @@ a:hover {
     transition: 0.4s;
 }
 
-@media (max-width: 500px) and (max-height: 800px){
+@media (max-width: 500px) and (max-height: 900px){
     .navbar{
         padding-top: 25px;
       }
