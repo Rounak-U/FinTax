@@ -137,12 +137,20 @@ a:hover {
         .nav-contents a {
             font-size: 18px;
             margin: 10px 0;
+           
             padding: 10px;
             color: blanchedalmond;
+            width: auto;
+            display: inline-block;
+
         }
     
         .nav-contents a:hover {
-            background-color: rgb(241, 199, 12);
+            background-color: rgba(0, 0, 0, 0.02);
+            width: 100%;
+            color: rgb(255, 230, 0);
+
+
         }
         .partition-section {
             display: block;
