@@ -139,10 +139,14 @@ a:hover {
         margin: 10px 0;
         padding: 10px;
         color: blanchedalmond;
+        width: auto;
+        display: inline-block;
     }
 
     .nav-contents a:hover {
-        background-color: rgb(241, 199, 12);
+        background-color: rgba(0, 0, 0,0.02);
+        width: auto;
+        color: rgb(255, 230, 0);
     }
 
     .services-section .card {
@@ -440,7 +444,7 @@ section {
 }
 /* Copyright Footer */
 .footer-section {
-    background: radial-gradient(rgb(32, 21, 0), rgba(0, 0, 0));
+    background: black;
     padding: 20px 0;
     color: almond;
     font-size: 1rem;
