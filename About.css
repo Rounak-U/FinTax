@@ -162,7 +162,7 @@ a:hover {
         }
     
         .image-side img {
-            max-height: 220px; /* Allow image to resize dynamically */
+            max-height: 170px; /* Allow image to resize dynamically */
             max-width: 100%; /* Make the image take the full width */
             padding-right: 0px; /* Remove right padding for mobile */
             margin-bottom: 20px; /* Add some space below the image */
@@ -185,39 +185,41 @@ a:hover {
             margin-right: 90px;
             padding-bottom: 10px;
         }
-        .values-section .row{
-            padding-left: 59px;
-            align-items: center;
-        }
         .values-section .card{
-            margin-bottom: 40px;
+            width: 95%;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .team-section h2{
             align-items: center;
         }
-        .team-section .row{
-            padding-left: 40px;
-        }
         .team-section .card{
-            justify-content: center;
+            width: 95%;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            
         }
         .team-section .align-odd{
-            padding-left: 0px;
-            margin-left: 0;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-right: 15px;
+            margin-left: auto;
+            
         }
 
         .testimonials-section .card{
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 40px;
+            width: 95%;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .testimonials-section .row{
-            padding-left: 32px;
-            margin-right: 0;
-        }
-
 
 
 }
