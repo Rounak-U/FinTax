@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTax - Online Tax Payment Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./login.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./TaxHome.html" class="logo-link">
+                    <img src="./FinTax_1.png" alt="FinTax Logo" />
+                </a>
+            </div>
+            <div class="nav-contents">
+                <a href="./TaxHome.html">Home</a>
+                <a href="./About.html">About</a>
+                <a href="./Services.html">Services</a>
+                <a href="./Login.html">Register/LogIn</a>
+                <a href="./support.html">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login to FinTax</h2>
+            <form action="#">
+                <input type="text" placeholder="Username" required>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <!-- Eye icon using Font Awesome -->
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+            <div class="google-login">
+                <button class="google-btn">
+                    <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
+                    Sign in with Google
+                </button>
+            </div>
+            <p>Don't have an account? <a href="#">Register here</a></p>
+        </div>
+    </section>
+
+    <script>
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordField = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            // Toggle the type attribute for the password input
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            // Toggle between the eye and eye-slash icons
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body>
+
+</html>
