@@ -38,8 +38,8 @@ body {
 }
 
 .logo img {
-    height: 30px;
-    margin-left: 50px;
+    height: 28px;
+    margin-left: 40px;
 }
 
 .logo-link {
@@ -80,6 +80,22 @@ a:hover {
     border-radius: 10px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: blanchedalmond;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
 /* Login Section */
 .login-section {
     display: flex;
@@ -88,6 +104,7 @@ a:hover {
     height: 100vh;
     padding-top: 50px;
 }
+
 
 .login-container {
     background: #ffffff;
@@ -110,20 +127,7 @@ a:hover {
     font-size: 1.75rem;
     font-weight: bold;
 }
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 20px;
-}
 
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background-color: blanchedalmond;
-    margin: 4px 0;
-    transition: 0.4s;
-}
 
 .login-container input {
     padding: 15px;
@@ -288,5 +292,6 @@ a:hover {
             max-width: 378.2px;
             max-height: 440px;
         }
+        
     
 }
