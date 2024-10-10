@@ -24,7 +24,7 @@
                 <a href="./index.html">Home</a>
                 <a href="./About.html">About</a>
                 <a href="./Services.html">Services</a>
-                <a href="./Login.html">Register/LogIn</a>
+                <a href="./login.html">LogIn</a>
                 <a href="./support.html">Support</a>
             </div>
             <div class="hamburger" onclick="toggleMenu()">
@@ -44,7 +44,7 @@
                 <div class="password-container">
                     <input type="password" id="password" placeholder="Password" required>
                     <!-- Eye icon using Font Awesome -->
-                    <i class="fas fa-eye toggle-password"></i>
+                    <i class="fas fa-eye-slash toggle-password"></i>
                 </div>
                 <button type="submit" class="login-btn">Log In</button>
             </form>
@@ -63,14 +63,25 @@
         const passwordField = document.getElementById('password');
 
         togglePassword.addEventListener('click', function () {
-            // Toggle the type attribute for the password input
-            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordField.setAttribute('type', type);
+            // Check if the password is currently hidden
+            const isPasswordHidden = passwordField.getAttribute('type') === 'password';
 
-            // Toggle between the eye and eye-slash icons
-            this.classList.toggle('fa-eye-slash');
+            // Toggle the type attribute between 'password' and 'text'
+            passwordField.setAttribute('type', isPasswordHidden ? 'text' : 'password');
+
+            // Update the icon based on the visibility of the password
+            if (isPasswordHidden) {
+                this.classList.remove('fa-eye-slash');  // Remove 'eye-slash' icon when password is visible
+                this.classList.add('fa-eye');           // Add 'eye' icon
+            } else {
+                this.classList.remove('fa-eye');        // Remove 'eye' icon when password is hidden
+                this.classList.add('fa-eye-slash');     // Add 'eye-slash' icon
+            }
         });
+
+
     </script>
+    <script src="./login.js"></script>
 </body>
 
 </html>
