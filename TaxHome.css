@@ -42,8 +42,8 @@ h2{
 }
 
 .logo img {
-    height: 30px;
-    margin-left: 50px;
+    height: 28px;
+    margin-left: 40px;
 }
 
 .logo-link {
@@ -100,7 +100,7 @@ a:hover {
 }
 
 /* For small screens (max-width: 410px) */
-@media (max-width: 500px) and (max-height: 900px) {
+@media (max-width: 500px) and (max-height: 1000px) {
 
   .navbar{
     padding-top: 25px;
@@ -108,6 +108,8 @@ a:hover {
 
   .logo img {
     margin-left: 0; 
+    height: 25px;
+    margin-bottom: 6px;
   }
     
   .nav-contents {
@@ -149,17 +151,33 @@ a:hover {
         color: rgb(255, 230, 0);
     }
 
+    .services-section{
+      padding-top: 0px;
+    }
+
     .services-section .card {
-      width: 95%;  
-      margin-bottom: 20px; 
+      width: 88%;  
+      height: auto;
+      margin-bottom: 40px; 
       padding: 10px;  
       margin-left: auto;
       margin-right: auto;
+      margin-top: 0px;
+      padding-top: 0px;
+      justify-content: center;
+    }
+
+    .services-section .card img{
+      max-width: 100%;          /* Prevent the image from exceeding the card's width */
+      height: auto;     
+      margin: 0;    
+      padding: 0;    /* Maintain aspect ratio */
+      display: block;  
     }
 
   /* Why Choose Section */
   .why-choose-section .card {
-    width: 90%; 
+    width: 80%; 
     height: auto; 
     margin-bottom: 40px; 
     padding: 10px; 
@@ -168,6 +186,7 @@ a:hover {
     margin-top: 0px;
     padding-top: 0px;
     box-sizing: border-box; 
+    border-radius: 100px;
   }
   .hero-section {
     display: flex;
@@ -247,11 +266,19 @@ section {
 
 .services-section .card {
   background-color: black;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7);
   opacity: 0; 
   transform: translateY(100px); 
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transition-delay: var(--delay, 0s); 
+  height: 450px;
+  border-radius: 30px;
+}
+
+.services-section .card:hover{
+  transform: translateY(-10px);
+    box-shadow: 4px 14px 50px 10px rgba(0, 0, 0, 0.25),
+                4px 14px 50px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card.show {
@@ -263,8 +290,16 @@ section {
 
 
 .services-section h3{
-    color: #6EACDA;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ffe5 10%, #ff00dd); /* Define your gradient colors here */
+  -webkit-background-clip: text; /* Clip background to the text */
+  -webkit-text-fill-color: transparent;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-section .card-text{
+  text-align: center;
 }
 
 .services-section {
@@ -272,11 +307,11 @@ section {
 }
 
 .services-section .card img {
-    width: 100%; 
-    height: 260px; 
-    object-fit: fill; 
-    margin-bottom: 5px; 
-    border-radius: 5px;
+    width: 23%; 
+    height: 65px; 
+    object-fit: fill;
+    margin-left: 120px;
+    margin-bottom: 25px; 
 }
 
 /* Why Choose Section */
@@ -285,19 +320,29 @@ section {
     background-color: black; 
     padding: 60px 0;
     color: white;
+    text-align: center;
 }
 
 .why-choose-section .card {
+  text-align: center;
     margin-bottom: 30px;
     background-color: #E2E2B6;
     color: black; 
-    height: 350px;
+    height: 330px;
     box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.4); 
     transition: box-shadow 0.3s ease-in-out;
     opacity: 0; 
     transform: translateY(100px); 
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     transition-delay: var(--delay, 0s); 
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.why-choose-section .card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 70px rgb(105, 105, 105);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 .card.show {
   opacity: 1;
@@ -320,6 +365,7 @@ section {
 }
 .why-choose-section p{
     color: black;
+    font-size: 16.5px;
 }
 .why-choose-section strong{
     color: rgb(241, 199, 12);
