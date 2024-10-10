@@ -46,8 +46,8 @@ h2 {
 }
 
 .logo img {
-    height: 30px;
-    margin-left: 50px;
+    height: 28px;
+    margin-left: 40px;
 }
 
 .logo-link {
@@ -201,9 +201,10 @@ a:hover {
     .values-section .card,
     .team-section .card,
     .testimonials-section .card {
-        width: 95%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 40px;
         height: auto;
         align-items: center;  /* Center content inside the card */
         justify-content: center; /* Ensure inner content is centered */
@@ -330,6 +331,13 @@ b {
     padding-bottom: 30px;
 }
 
+.values-section .card img{
+    margin-top: 10px;
+    height:75px;
+    width: 25%;
+    margin-bottom: -2px;
+}
+
 .section-heading {
     font-size: 2.5em;
     margin-bottom: 50px;
@@ -339,8 +347,11 @@ b {
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 .values-section p {
-    font-size: 0.98rem;
+    font-size: 1rem;
     padding-top: 11px;
+    /* word-wrap: normal; */
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .values-section h3{
     color: blanchedalmond;
@@ -355,9 +366,10 @@ b {
 .values-section .card {
     opacity: 0;
     transform: translateY(100px);
-    height: 350px;
+    height: 390px;
     color: white;
-    background: radial-gradient(ellipse at center, rgb(52, 49, 2), black);
+     background: linear-gradient(0deg, rgb(80, 74, 2) 55%, rgb(218, 204, 53));
+    /* background: radial-gradient(ellipse at center, rgb(52, 49, 2), black); */
     border-radius: 10px;
     width: 310px;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
