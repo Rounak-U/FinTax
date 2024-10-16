@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 
-    const teamSectionElements = document.querySelectorAll('.team-section h2, .team-section p, .team-section .card');
+    const teamSectionElements = document.querySelectorAll('.team-section h2, .team-section p, .team-section .card, .team-section .card1');
 
     teamSectionElements.forEach(element => {
         observer.observe(element);
