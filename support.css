@@ -197,6 +197,7 @@ h5.show{
 @media (max-width: 600px) and (max-height: 1000px){
     body{
         overflow-x: hidden;
+        height: 237vh;
     }
     .navbar{
         padding-top: 25px;
@@ -244,6 +245,7 @@ h5.show{
     }
     .details{
         padding-right: 200px;
+        height: 400px;
     }
     .support h2{
         font-size: 40px;
@@ -255,19 +257,10 @@ h5.show{
     .content {
         flex: 1; /* This ensures the content grows to fill available space */
     }
-    footer {
-        background-color: black;
-        color: blanchedalmond;
-        text-align: center;
-        padding: 15px;
-        font-size: 12px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        flex-shrink: 0; /* Prevents the footer from shrinking */
-    }
-    
+    .footer-section{
 
+        margin-top: 330px;
+    }
 }
 
 /* FAQ Section */
@@ -304,15 +297,12 @@ h5.show{
 }
 
 .footer-section {
-    background: black;
-    padding: 20px 0;
-    color: almond;
-    font-size: 1rem;
+    padding: 5px;
+    background-color: black;
+    color: white;
     text-align: center;
 }
-
 .footer-section p {
     color: white;
     margin: 5px 0;
 }
-
