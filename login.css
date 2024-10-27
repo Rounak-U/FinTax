@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient( rgb(241, 199, 12,0.7),rgb(0,0,0)); /* Light gradient background */
+    background: black; 
+    
 }
 
 /* Scrollbar */
@@ -55,29 +56,17 @@ body {
 .nav-contents > a {
     font-size: medium;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
     color: blanchedalmond;
     padding: 8px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     border-radius: 10px;
 }
 
-.nav-contents > a:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(241, 199, 12);
-    border-radius: 10px;
-    transform: translateY(-1px);
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-/* Navbar active state */
+.nav-contents > a:hover,
 .nav-contents > a.active {
     color: rgb(0, 0, 0);
     background-color: rgb(241, 199, 12);
-    border-radius: 10px;
 }
 
 .hamburger {
@@ -95,7 +84,6 @@ a:hover {
     transition: 0.4s;
 }
 
-
 /* Login Section */
 .login-section {
     display: flex;
@@ -105,16 +93,69 @@ a:hover {
     padding-top: 50px;
 }
 
-
 .login-container {
-    background: #ffffff;
+    background: rgba(255,255,255,0.8);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    max-width: 370px;
     width: 100%;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    margin-left: 150px;
+}
+
+.instruction-card {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-right: 20px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-width: 3px;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-image-source: linear-gradient(90deg, orange, yellow);
+    border-image-slice: 1;
+    animation: borderMove 4s linear infinite; /* Infinite animation */
+}
+
+
+.instruction-card h3 {
+    margin-top: -10px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.instruction-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.instruction-card ul li {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Border animation */
+@keyframes borderMove {
+    0% {
+        border-image-source: linear-gradient(90deg, rgb(255, 149, 0), yellow);
+        border-image-slice: 1;
+    }
+    50% {
+        border-image-source: linear-gradient(270deg, rgb(255, 140, 0), yellow);
+        border-image-slice: 1;
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, rgb(255, 162, 0), yellow);
+        border-image-slice: 1;
+    }
 }
 
 .login-container:hover {
@@ -127,7 +168,6 @@ a:hover {
     font-size: 1.75rem;
     font-weight: bold;
 }
-
 
 .login-container input {
     padding: 15px;
@@ -150,6 +190,7 @@ a:hover {
     color: #aaa;
 }
 
+/* Password Container */
 .password-container {
     position: relative;
     width: 100%;
@@ -160,13 +201,14 @@ a:hover {
     padding-right: 45px; 
 }
 
+/* Toggle Password Icon */
 .toggle-password {
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 15px; 
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.2rem; 
     color: #888;
     transition: color 0.3s ease;
 }
@@ -175,7 +217,7 @@ a:hover {
     color: #f1c40f;
 }
 
-.login-container .login-btn {
+.login-container .btn {
     background-color: #f1c40f;
     color: #fff;
     padding: 15px;
@@ -188,8 +230,8 @@ a:hover {
     width: 100%;
 }
 
-.login-container .login-btn:hover {
-    background-color: #e1af07;
+.login-container .btn:hover {
+    background-color: #977811;
     transform: translateY(-2px);
 }
 
@@ -208,90 +250,39 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Google Sign-In Button */
-.google-login {
-    margin-top: 20px;
-}
-
-.google-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    width: 100%;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.google-btn img {
-    height: 20px;
-    margin-right: 10px;
-}
-
-.google-btn:hover {
-    background-color: #f9f9f9;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 600px) and (max-height: 1000px)
-{
-    .navbar{
+@media (max-width: 600px) and (max-height: 1000px) {
+    .navbar {
         padding-top: 25px;
-      }
+    }
     
-      .logo img {
+    .logo img {
         margin-left: 0; 
-      }
-        
-      .nav-contents {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            width: 100%;
-            background-color: black;
-            text-align: right;
-            padding: 10px 20px;
-            backdrop-filter: blur(4px);
-        }
-    
-        /* Show the hamburger icon */
-        .hamburger {
-            display: flex;
-        }
-    
-        /* When the menu is active*/
-        .nav-contents.active {
-            display: flex;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-    
-        .nav-contents a {
-            font-size: 18px;
-            margin: 10px 0;
-            padding: 10px;
-            color: blanchedalmond;
-            width: auto;
-            display: inline-block;
-        }
-    
-        .nav-contents a:hover {
-            background-color: rgba(0, 0, 0,0.02);
-            width: auto;
-            color: rgb(255, 230, 0);
-        }
+    }
 
-        .login-container{
-            max-width: 378.2px;
-            max-height: 440px;
-        }
-        
-    
+    .nav-contents {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: black;
+        text-align: right;
+        padding: 10px 20px;
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-contents.active {
+        display: flex;
+    }
+
+    .nav-contents > a {
+        padding: 10px 15px;
+        border-radius: 0; 
+        margin-bottom: 5px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
