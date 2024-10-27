@@ -99,7 +99,7 @@
       transition: 0.4s;
   }
   
-  /* For small screens (max-width: 410px) */
+  /* For small screens (max-width: 500px) */
   @media (max-width: 500px) and (max-height: 1000px) {
   
     .navbar{
@@ -125,12 +125,10 @@
           backdrop-filter: blur(4px);
       }
   
-      /* Show the hamburger icon */
       .hamburger {
           display: flex;
       }
   
-      /* When the menu is active*/
       .nav-contents.active {
           display: flex;
           background-color: rgba(0, 0, 0, 0.8);
@@ -168,10 +166,10 @@
       }
   
       .services-section .card img{
-        max-width: 100%;          /* Prevent the image from exceeding the card's width */
+        max-width: 100%;         
         height: auto;     
         margin: 0;    
-        padding: 0;    /* Maintain aspect ratio */
+        padding: 0;   
         display: block;  
       }
   
@@ -291,9 +289,9 @@
   
   .services-section h3{
     font-weight: bold;
-    background: linear-gradient(90deg, #00ffe5 10%, #ff00dd); /* Define your gradient colors here */
+    background: linear-gradient(90deg, #00ffe5 10%, #ff00dd); 
     background-clip: content-box;
-    -webkit-background-clip: text; /* Clip background to the text */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
       text-align: center;
       margin-bottom: 20px;
