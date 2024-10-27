@@ -98,7 +98,6 @@ a:hover {
 
 
 /* Support Section */
-/* Support Section */
 .support {
     height: 350px;
     width: 100%;
@@ -109,19 +108,20 @@ a:hover {
     align-items: center;
     text-align: center;
     padding-top: 90px;
-    overflow: hidden; /* Prevents any overflow during animation */
+    overflow: hidden; 
 }
 
 .support h2 {
     font-size: 50px;
     font-weight: bolder;
     
-    transform: translateY(100px); /* Initial state: moved down */
-    opacity: 0; /* Initial state: invisible */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transition */
+    transform: translateY(100px); 
+    opacity: 0; 
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; 
     font-weight: bold;
-    background: linear-gradient(360deg, #c0e2ff, #0191ff); /* Define your gradient colors here */
-    -webkit-background-clip: text; /* Clip background to the text */
+    background: linear-gradient(360deg, #c0e2ff, #0191ff); 
+    background-clip: content-box;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 
@@ -130,29 +130,26 @@ h2.show {
     transform: translateY(0); /* Move to original position */
 }
 
-/* Other styles remain unchanged */
-
-
 .support p {
     font-size: 20px;
     color: #f8f9fa;
     margin-top: 10px;
-    transform: translateY(40px); /* Start lower */
+    transform: translateY(40px);
     opacity: 0; /* Initially invisible */
     transition: transform 0.5s ease-out 0.3s, opacity 0.5s ease-out 0.3s; /* Delay animation */
     font-weight: bold;
-    background: linear-gradient(360deg,#0191ff ,#c0e2ff 20%); /* Define your gradient colors here */
-    -webkit-background-clip: text; /* Clip background to the text */
+    background: linear-gradient(360deg,#0191ff ,#c0e2ff 20%); 
+    background-clip: content-box;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 
 .support p.show {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to original position */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 
-/* Contact Details Section */
 /* Contact Details Section */
 .details {
     height: 379px;
@@ -160,7 +157,7 @@ h2.show {
     background: radial-gradient(rgba(255, 217, 0, 0), rgba(0, 0, 0, 0.6));
     padding-left: 40px;
     padding-bottom: 40px;
-    overflow: hidden; /* Prevent overflow during animation */
+    overflow: hidden; 
 }
 
 .details h5 {
@@ -168,24 +165,21 @@ h2.show {
     font-weight: 600;
     font-size: 30px;
     color: azure;
-    transform: translateX(250px); /* Start off-screen to the right */
-    opacity: 0; /* Initially invisible */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transition */
+    transform: translateX(250px); 
+    opacity: 0; 
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; 
 }
 
 h5.show{
-    opacity: 1; /* Fade in */
-    transform: translateX(0); /* Move to original position */
+    opacity: 1; 
+    transform: translateX(0); 
 }
 
-/* Keep other styles as they are */
-
-
 .details p {
-    padding-top: 20px; /* Adjusted padding */
+    padding-top: 20px; 
     font-size: 20px;
     color: black;
-    transform: translateX(100px); /* Start lower */
+    transform: translateX(100px); 
     opacity: 0; /* Initially invisible */
     transition: transform 0.5s ease-out 0.5s, opacity 0.5s ease-out 0.5s; /* Delay animation */
 }
@@ -194,6 +188,7 @@ h5.show{
     opacity: 1; /* Fade in */
     transform: translateX(0); /* Move to original position */
 }
+
 @media (max-width: 600px) and (max-height: 1000px){
     body{
         overflow-x: hidden;
@@ -255,7 +250,7 @@ h5.show{
         height: auto;
     }
     .content {
-        flex: 1; /* This ensures the content grows to fill available space */
+        flex: 1; 
     }
     .footer-section{
 
