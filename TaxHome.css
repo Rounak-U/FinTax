@@ -500,11 +500,11 @@
       }
 
       .services-section .card {
-        width: 80%;  
+        width: 90%;  
         height: auto;
         margin: 0;
         padding: 0;
-        margin-left: 10%;
+        margin-left: 5%;
         margin-bottom: 10%;
       }
 
@@ -531,11 +531,11 @@
     }
 
     .why-choose-section .card {
-      width: 80%; 
+      width: 90%; 
       height: auto; 
       margin-bottom: 50px; 
       padding: 15px; 
-      margin-left: 10%;
+      margin-left: 5%;
       box-sizing: border-box; 
       border-radius: 40px;
     }
