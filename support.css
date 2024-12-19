@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #000000;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -272,7 +272,7 @@ h2.show {
     }
 
     .support{
-        height: 700px;
+        height: 810px;
         width: 100%;
     }
 
@@ -307,6 +307,7 @@ h2.show {
     }
 
     .faq{
+        margin-top: -25px;
         padding: 20px;
         height: auto;
     }
