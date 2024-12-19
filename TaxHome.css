@@ -7,6 +7,7 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #f8f9fa;
+      overflow-x: hidden;
   }
   
   /* Scrollbar */
@@ -23,7 +24,11 @@
   }
   
   ::-webkit-scrollbar-track {
-      background-color: #333;
+      background-color: #000000;
+  }
+
+  ::-webkit-scrollbar-track-piece{
+    background-color: black;
   }
   
   /* Navbar */
@@ -97,104 +102,6 @@
       background-color: blanchedalmond;
       margin: 4px 0;
       transition: 0.4s;
-  }
-  
-  /* For small screens (max-width: 500px) */
-  @media (max-width: 500px) and (max-height: 1000px) {
-  
-    .navbar{
-      padding-top: 25px;
-    }
-  
-    .logo img {
-      margin-left: 0; 
-      height: 25px;
-      margin-bottom: 6px;
-    }
-      
-    .nav-contents {
-          display: none;
-          flex-direction: column;
-          position: absolute;
-          top: 60px;
-          right: 0;
-          width: 100%;
-          background-color: black;
-          text-align: right;
-          padding: 10px 20px;
-          backdrop-filter: blur(4px);
-      }
-  
-      .hamburger {
-          display: flex;
-      }
-  
-      .nav-contents.active {
-          display: flex;
-          background-color: rgba(0, 0, 0, 0.8);
-      }
-  
-      .nav-contents a {
-          font-size: 18px;
-          margin: 10px 0;
-          padding: 10px;
-          color: blanchedalmond;
-          width: auto;
-          display: inline-block;
-      }
-  
-      .nav-contents a:hover {
-          background-color: rgba(0, 0, 0,0.02);
-          width: auto;
-          color: rgb(255, 230, 0);
-      }
-  
-      .services-section{
-        padding-top: 0px;
-      }
-  
-      .services-section .card {
-        width: 88%;  
-        height: auto;
-        margin-bottom: 40px; 
-        padding: 10px;  
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        padding-top: 0px;
-        justify-content: center;
-      }
-  
-      .services-section .card img{
-        max-width: 100%;         
-        height: auto;     
-        margin: 0;    
-        padding: 0;   
-        display: block;  
-      }
-  
-    /* Why Choose Section */
-    .why-choose-section .card {
-      width: 80%; 
-      height: auto; 
-      margin-bottom: 40px; 
-      padding: 10px; 
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0px;
-      padding-top: 0px;
-      box-sizing: border-box; 
-      border-radius: 100px;
-    }
-    .hero-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center; 
-      height: 90vh;
-      padding: 0 20px;
-      margin-top: 0; 
-    }
   }
   
   /* Hero Section */
@@ -289,9 +196,9 @@
   
   .services-section h3{
     font-weight: bold;
-    background: linear-gradient(90deg, #00ffe5 10%, #ff00dd); 
+    background: linear-gradient(90deg, #00ffe5 10%, #ff00dd); /* Define your gradient colors here */
     background-clip: content-box;
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text; /* Clip background to the text */
     -webkit-text-fill-color: transparent;
       text-align: center;
       margin-bottom: 20px;
@@ -500,7 +407,145 @@
       color: white;
       margin: 5px 0;
   }
+
+  .foot{
+    border: 1px solid rgb(252, 223, 4);
+    margin: 0;
+    padding: 0;
+  }
   
+  @media (max-width: 768px) {
+
+    html,body{
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
   
+    .navbar{
+      padding-top: 25px;
+    }
   
+    .logo img {
+      margin-left: 0; 
+      height: 25px;
+      margin-bottom: 6px;
+    }
+      
+    .nav-contents {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 100%;
+          background-color: black;
+          text-align: right;
+          padding: 10px 20px;
+          backdrop-filter: blur(4px);
+      }
   
+      /* Show the hamburger icon */
+      .hamburger {
+          display: flex;
+      }
+  
+      /* When the menu is active*/
+      .nav-contents.active {
+          display: flex;
+          background-color: rgba(0, 0, 0, 0.8);
+      }
+  
+      .nav-contents a {
+          font-size: 18px;
+          margin: 10px 0;
+          padding: 10px;
+          color: blanchedalmond;
+          width: auto;
+          display: inline-block;
+      }
+  
+      .nav-contents a:hover {
+          background-color: rgba(0, 0, 0,0.02);
+          width: auto;
+          color: rgb(255, 230, 0);
+      }
+
+      .hero-section{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 750px;
+      }
+
+      .hero-section .container{
+        padding-top: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-section h1{
+        font-weight: bold;
+      }
+      .services-section{
+        margin-top: -8%;
+        padding-top: 5%;
+      }
+
+      .services-section .container{
+        height: auto;
+      }
+
+      .services-section .card {
+        width: 80%;  
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-left: 10%;
+        margin-bottom: 10%;
+      }
+
+      .services-section .card img{
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        height: 20%;
+        margin-bottom: 10%;
+        margin-left: 40%;
+      }
+
+    .why-choose-section
+    {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-top: -10%;
+    }
+
+    .why-choose-section h2{
+      padding-top: 15%;
+      padding-bottom: 10%;
+    }
+
+    .why-choose-section .card {
+      width: 80%; 
+      height: auto; 
+      margin-bottom: 50px; 
+      padding: 15px; 
+      margin-left: 10%;
+      box-sizing: border-box; 
+      border-radius: 40px;
+    }
+
+    .trusted-companies-section{
+      margin-top: -5%;
+    }
+
+    .trusted-companies-section h2{
+      padding-top: 5%;
+    }
+
+  }
